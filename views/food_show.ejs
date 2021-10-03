@@ -9,7 +9,7 @@
 <body>
     <h1>At foo bar</h1>
             <a href="/food">Back to food menu</a>
-            <h2><%= item.name %></h2>
+            <h2><%=item.name[0].toUpperCase() + item.name.substring(1) %></h2>
             <h3>$<%= item.price %></h3>
             <br><img src="<%= item.image %>" weight= 400px height= 400px></br>
     </ul>
